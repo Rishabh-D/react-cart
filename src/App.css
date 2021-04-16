@@ -1,38 +1,40 @@
-.App {
+body {
   text-align: center;
 }
+.itemHolder {
+  max-width: 300px;
+  margin-bottom: 3px;
+  display: grid;
+}
+.item {
+  display: grid;
+  padding: 5px;
+  grid-template-columns: 40px 40px 40px 40px 40px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  justify-items: center;
+  /* border-radius: 0.3em; */
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  cursor: pointer;
+  border-radius: 0.2em;
+  width: 30px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3369ff;
+  border: none;
+  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
+    inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15),
+    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button[name="delete"] {
+  background-color: #ff3333;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:active {
+  box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15),
+    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
 }
